@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: bisque;
+}
+form{
+    width: 450px;
+    color:white;
+    border-radius: 7px;
+    padding: 30px;
+    background-color: rgb(36, 28, 28);
+    box-shadow: 3px 3px 10px rgb(36, 28, 28);
+}
+form .inputArea{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+}
+form .input{
+    position: relative;
+    background: transparent;
+    border-radius: 7px;
+    font-size: 0.9rem;
+    height: 2.2rem;
+    overflow: hidden;
+    color: black;
+}
+.input input{
+   height: 100%;
+   width: 100%;
+   font-size: 1rem;
+   padding-left: 0.5rem;
+   padding-top: 0.3rem;  
+}
+
+.input input:focus ~ label,
+.input input:valid ~ label{
+    top:5px;
+    font-size: 0.5rem;
+    color: green;
+}
+.input label{
+    position: absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding-left: 0.5rem;
+    transition: 0.5s ease;
+}
+.inputArea small{
+    font-size: 0.7rem;
+    color: red;
+    text-transform: lowercase;
+    
+}
+form button{
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    color:black;
+    text-align: center;
+    border-radius: 7px;
+    background:  bisque;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}

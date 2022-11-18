@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form action="#" >
+        <div class="inputArea">
+            <div class="input">
+                <input type="text" name="ime" required>
+                <label >Upiši ime i prezime</label>
+            </div>
+            <small></small>
+        </div>
+        <div class="inputArea">
+            <div class="input">
+                <input type="email" name="mail" required>
+                <label >Upiši svoj e-mail</label>
+            </div>
+            <small></small>
+        </div>
+        <div class="inputArea">
+            <div class="input">
+                <input type="password" name="lozinka" required>
+                <label >Upiši lozinku</label>
+            </div>
+            <small></small>
+        </div>
+        <div class="inputArea">
+            <div class="input">
+                <input type="password" name="ponoviLozinku" required>
+                <label >Ponovi upisanu lozinku</label>
+            </div>
+            <small></small>
+        </div>
+        <button type="submit">Registriraj se</button>
+    </form>
+
+<script src="/Javascript/main.js" type="module"></script>    
+</body>
+</html>
